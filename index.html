@@ -22,8 +22,7 @@
         }
         
         .widget-container {
-            max-width: 600px;
-            width: 100%;
+            width: 500px;
             border-radius: 20px;
             overflow: hidden;
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
@@ -275,7 +274,7 @@
         }
         
         .toggle-location {
-            background: linear-gradient(135deg, #9d50bb 0%, #6e48aa 100%);
+            background: linear-gradient(135deg, #9d50bb 极%, #6e48aa 100%);
             color: #F5F5DC;
             border: none;
             padding: 12px 25px;
@@ -313,7 +312,7 @@
         }
         
         @keyframes moon-pulse {
-            0% { box-shadow: 0 0 20px rgba(192, 192, 192, 0.8), 0 0 40px rgba(176, 196, 222, 0.6), 0 0 60px rgba(240, 248, 255, 0.4); }
+            0% { box-shadow: 极 0 20px rgba(192, 192, 192, 0.8), 0 0 40px rgba(176, 196, 222, 0.6), 0 0 60px rgba(240, 248, 255, 0.4); }
             100% { box-shadow: 0 0 30px rgba(192, 192, 192, 1), 0 0 60px rgba(176, 196, 222, 0.8), 0 0 90px rgba(240, 248, 255, 0.6); }
         }
         
@@ -333,6 +332,11 @@
         }
         
         @media (max-width: 600px) {
+            .widget-container {
+                width: 95%;
+                height: 500px;
+            }
+            
             .widget-header h2 {
                 font-size: 1.8rem;
             }
@@ -457,7 +461,4 @@
         }
         
         // Optimized Ascendant calculation
-        function calculateAscendant(lat, lon) {
-            const now = new Date();
-            
-            //
+        function calculateAscendant(lat
